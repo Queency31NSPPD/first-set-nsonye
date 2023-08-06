@@ -14,14 +14,22 @@ body{
 .logo{
 width: 120px;
 margin: 15px;
+
 }
 
 ul li {
 list-style: none;
 justify-content: right;
+display: inline;
+list-style: none;
+line-height: 42px;
+margin-left: 15px;
+font-weight: bolder;
 }
 
 ul{
+    padding: 0;
+      margin: 0;
 display: flex;
 flex-direction: row;
 flex-flow: wrap;
@@ -34,6 +42,7 @@ padding: 15px;
 background: green;
 border-radius: 7px;
 color: #ffff;
+line-height: 1;
         }
     
 .home-bg{
@@ -56,17 +65,6 @@ align-content: center;
 justify-content: space-around;
 }
 
-.input{
-    font-size: 15px;
-    font-weight: 400;
-    background: none;
-    border-color: #ffff;
-    text-align: left;
-    border-radius: 50px;
-    width: 500px;
-    height: 40px;
-    color: #ffff;
-    }
 
     .star-icon{
         margin-top: 5px;
@@ -76,11 +74,11 @@ justify-content: space-around;
     button{
     border-color: white;
     border-radius: 9px;
-    background: none;
+    background: transparent;
     width: 151px;
     height: 30px;
     color: #ffff;
-    margin-bottom: 10px;
+    
 }
 
 .brands{
@@ -99,6 +97,35 @@ color: rgb(19, 18, 18);
     justify-content: space-around;
 }
 
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
 
+button[type="submit"]:hover {
+  opacity: 1;
+}
 
-    
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+form {
+  color: rgb(252, 248, 248);
+  display: flex;
+  padding: 2px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+  
