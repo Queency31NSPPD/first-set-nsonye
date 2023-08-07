@@ -1,50 +1,54 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.main{
-    background: rgb(240, 237, 233);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
+body {
+    margin: 100px 0;
+  }
+  
 .logo{
 width: 120px;
 margin: 15px;
 
 }
 
-ul li {
-list-style: none;
-justify-content: right;
-display: inline;
-list-style: none;
-line-height: 42px;
-margin-left: 15px;
-font-weight: bolder;
-}
+.navbar-nav .nav-item {
+    list-style: none;
+    justify-content: left;
+    display: inline;
+    list-style: none;
+    margin-left: 15px;
+    font-weight: bolder;
+    color: black;
+    }
+    
+    .navbar-nav{
+        padding: 0;
+          margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin: 20px;
+    color: black;
+    }
 
-ul{
-    padding: 0;
-      margin: 0;
-display: flex;
-flex-direction: row;
-flex-flow: wrap;
-align-items: center;
-margin: 20px;
-}
+    .navbar-nav .nav-item .green-icon{
+        color: white;
 
+    }
+
+.navbar-collapse {
+    flex-grow: 0;
+}
 .green-icon{
 padding: 15px;
 background: green;
 border-radius: 7px;
 color: #ffff;
-line-height: 1;
-        }
-    
+line-height:1 ;
+margin-top: -8px
+
+}
+
+.login{
+color: #fff;
+}
 .home-bg{
 background: url(/images/homeBg.png);
 background-repeat: no-repeat;
@@ -53,9 +57,13 @@ color: rgb(236, 239, 241);
 }
 
 h3{
-font-size: 35px;
-font-weight: 400;
-margin: 0;
+font-size: 30px;
+
+}
+
+h2{
+color: #fff;
+margin-top: 40px;
 }
 
 .green-logo{
@@ -89,8 +97,6 @@ color: rgb(19, 18, 18);
     justify-content: space-around;
 }
 
-
-
 .popular{
 display: flex;
 justify-content: center;
@@ -105,7 +111,44 @@ padding-bottom:20px ;
 }
 
 
+.search { 
+    position: relative; 
+    margin: 0 auto ;
+    text-align: center;
 
+  }
+  .search input { 
+    text-indent: 30px;
+    
+  }
+  .search .fa-solid  { 
+    position: absolute;
+    top: 40px;
+    left: 65%;
+    font-size: 15px;
+    color: rgb(221, 230, 222);
+  }
+  
+  input {
+    width: 450px;
+    padding: 5px;
+    margin: 15px;
+    height: 47px;
+    outline: none;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
 
-
-
+::placeholder{
+  color:#fff;
+}
+ 
+@media (max-width:900px) {
+  .logo{
+    width: 100px;
+    margin: 10px;
+    
+    }
+}
