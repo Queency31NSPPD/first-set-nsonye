@@ -1,6 +1,7 @@
-body {
+ body {
     margin: 100px 0;
   }
+  
   
 .logo{
 width: 120px;
@@ -80,21 +81,26 @@ justify-content: space-around;
         
     }
   
-
-.brands{
-background: #f9f5f5;
-text-align: center;
-text-decoration: underline;
-font-size: 30px;
-font-weight: 900;
-color: rgb(19, 18, 18);
-}
+    .brands{
+      margin-top: 20px;
+      background: #f9f5f5;
+      text-align: center;
+      text-decoration: underline;
+      font-size: 30px;
+      font-weight: 900;
+      color: rgb(19, 18, 18);
+      }
 
 .brands-icon{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+.head{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .popular{
@@ -151,4 +157,35 @@ padding-bottom:20px ;
     margin: 10px;
     
     }
+
+    input {
+      width: 300px;
+      padding: 5px;
+      margin: 15px;
+      height: 47px;
+      outline: none;
+      background: none;
+      color: white;
+      border: 1px solid white;
+      border-radius: 20px;
+  }
+
+  .popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom:20px ;
+    }
+    .box{
+      border:1px solid white;
+      padding: 10px;
+      border-radius: 12px;
+      margin:5px;
+      width: 250px;
+      text-align: center;
+    }
+
 }
